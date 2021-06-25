@@ -96,8 +96,8 @@ export default {
 
 <style>
 .info-container {
-    max-width: 300px;
-    margin: 10px;
+    max-width: 350px;
+    margin: 5px;
     display: inline-flex;
 }
 .custom-card {
