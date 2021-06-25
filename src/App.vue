@@ -5,16 +5,35 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    <hr/>
+    <div class="copyright">&copy; {{currentYear}} OxSoft Solutions</div>
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    this.$store.dispatch("getWeeks");
+    this.$store.dispatch("getDailyUpdates");
+  },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    }
+  }
+}
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 50%;
+  margin: auto;
 }
 
 #nav {
@@ -28,5 +47,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+hr {
+  width: 100%;
+  background-color: #2c3e50;
+  height: 1px;
 }
 </style>
