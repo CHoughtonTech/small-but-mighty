@@ -1,5 +1,5 @@
 const _weeks = [
-    { "id": 0 , "weeklyPicture": "https://i.imgur.com/veaZVZ0.jpeg", "weight": 1540, "length": 38 }
+    { "id": 0 , "weekNum": 1, "weeklyPicture": "https://i.imgur.com/veaZVZ0.jpeg", "weight": 1540, "length": 38 }
 ]
 const _dailyUpdates = [
     { "id": 0, "weekId": 0, "date": "6/19/2021", "details": "Born Today! It's cold out here!", "weight": 1540, "additionalDetails": "Luke was born after complications due to pre-eclampsia.", "dailyPicture": "https://i.imgur.com/veaZVZ0.jpeg"},
