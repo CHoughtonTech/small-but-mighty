@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <img src="https://i.imgur.com/g1YJIOY.jpeg" /><br/>
+    <img class="title-img" src="@/assets/main_ljh.jpg" /><br/>
     <h3>Lucas James Houghton</h3>
     <h3>6/19/2021 10:22 AM</h3>
     <h3>3 lbs 6 oz</h3>
@@ -80,5 +80,8 @@ h5 {
 h6 {
   font-size: 15px;
   font-weight: 700;
+}
+.title-img {
+  width:300px;
 }
 </style>
