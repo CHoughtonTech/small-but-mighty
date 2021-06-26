@@ -81,7 +81,7 @@ export default {
         const ouncePerGram = 0.035274;
         let totalOunces = grams * ouncePerGram;
         let pounds = Math.floor(totalOunces / 16);
-        let ounces = Math.round(totalOunces - (pounds * 16));
+        let ounces = Math.floor((totalOunces - (pounds * 16)) * 2) / 2;
         if (!isNaN(pounds) && !isNaN(ounces)) {
             return `${pounds} lbs ${ounces} oz`;
         } else if (!isNaN(pounds)) {

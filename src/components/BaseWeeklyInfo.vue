@@ -4,7 +4,7 @@
             <div class="card custom-card-border">
                 <div class="card-image">
                     <figure class="image is-3by4">
-                        <img :src="imageURL" alt="Placeholder image">
+                        <img :src="imageURL" alt="Week Image">
                     </figure>
                 </div>
                 <div class="card-content">
@@ -15,8 +15,8 @@
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">Week</p>
-                            <p class="subtitle is-6">{{weekNumber}}</p>
+                            <p class="title is-4">Week {{weekNumber}}</p>
+                            <p class="subtitle is-6">{{weekRange}}</p>
                         </div>
                     </div>
                     <div class="media">
@@ -50,6 +50,15 @@
 export default {
     props: {
         week: Object
+    },
+    computed: {
+        weekRange() {
+            let weekUpdates = this.$store.getters.getUpdatesByWeek(this.week.id);
+            let firstDate = `${new Date(weekUpdates[0].date).getMonth() + 1}/${new Date(weekUpdates[0].date).getDate()}`;
+            let lastDate = `${new Date(weekUpdates[weekUpdates.length - 1].date).getMonth() + 1}/${new Date(weekUpdates[weekUpdates.length - 1].date).getDate()}`;
+
+            return `${firstDate} - ${lastDate}`;
+        }
     },
     created() {
         this.imageURL = this.week.weeklyPicture;
