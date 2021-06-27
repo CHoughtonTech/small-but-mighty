@@ -54,10 +54,16 @@ export default {
     computed: {
         weekRange() {
             let weekUpdates = this.$store.getters.getUpdatesByWeek(this.week.id);
-            let firstDate = `${new Date(weekUpdates[0].date).getMonth() + 1}/${new Date(weekUpdates[0].date).getDate()}`;
-            let lastDate = `${new Date(weekUpdates[weekUpdates.length - 1].date).getMonth() + 1}/${new Date(weekUpdates[weekUpdates.length - 1].date).getDate()}`;
+            if (weekUpdates && weekUpdates.length > 0) {
+                let dateStart = new Date(weekUpdates[0].date);
+                let dateEnd = new Date();
+                dateEnd.setDate(dateStart.getDate() + 6);
+                let firstDate = `${dateStart.getMonth() + 1}/${dateStart.getDate()}`;
+                let lastDate = `${dateEnd.getMonth() + 1}/${dateEnd.getDate()}`;
 
-            return `${firstDate} - ${lastDate}`;
+                return `${firstDate} - ${lastDate}`;
+            }
+            return null;
         }
     },
     created() {
