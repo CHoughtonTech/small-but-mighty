@@ -10,7 +10,7 @@ const _dailyUpdates = [
     { "id": 4, "weekId": 0, "date": "6/23/2021", "details": "Big blue light today, Mommy was able to leave the hospital, AND no more tiny nose hose!", "weight": 1250, "additionalDetails": "Luke was born after complications due to pre-eclampsia.", "dailyPicture": require("../assets/day5.jpg")},
     { "id": 5, "weekId": 0, "date": "6/24/2021", "details": "No more sticky needles! Just milk now!", "weight": 1280, "additionalDetails": "Luke was born after complications due to pre-eclampsia.", "dailyPicture": require("../assets/day6.jpg")},
     { "id": 6, "weekId": 0, "date": "6/25/2021", "details": "I graduated to level 2 today for healthy babies!", "weight": 1320, "additionalDetails": "Luke was born after complications due to pre-eclampsia.", "dailyPicture": require("../assets/day7.jpg")},
-    { "id": 7, "weekId": 1, "date": "6/26/2021", "details": "No more risk or jaundice, and Daddy helped Mommy give me a bed bath!", "weight": 1350, "additionalDetails": "We were able to give Luke his first bath today! Kelly worked with him to breastfeed, but he wasn't feeling it.", "dailyPicture": require("../assets/day8.jpg")}
+    { "id": 7, "weekId": 1, "date": "6/26/2021", "details": "No more risk of jaundice, and Daddy helped Mommy give me a bed bath!", "weight": 1350, "additionalDetails": "We were able to give Luke his first bath today! Kelly worked with him to breastfeed, but he wasn't feeling it.", "dailyPicture": require("../assets/day8.jpg")}
 ]
 
 export default {
