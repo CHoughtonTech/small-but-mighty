@@ -96,7 +96,7 @@ export default {
         },
         convertLength(cm) {
             const inchPerCM = 0.393701;
-            let inches = Math.round(cm * inchPerCM);
+            let inches = Math.floor(cm * inchPerCM * 2) / 2;
             if (!isNaN(inches)) {
                 return `${inches} inches`
             } else {
