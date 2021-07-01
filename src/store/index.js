@@ -23,6 +23,11 @@ export default new Vuex.Store({
         let thisWeeksUpdates = state.updates.filter(update => update.weekId == weekId);
         return thisWeeksUpdates;
       }
+    },
+    getWeekInfoById: (state) => (weekId) => {
+      if (weekId !== null) {
+        return state.weeks.find(week => week.id === parseInt(weekId));
+      }
     }
   },
   actions: {
