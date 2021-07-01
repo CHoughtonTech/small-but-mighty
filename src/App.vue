@@ -3,11 +3,6 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
     </div>
-    <img class="title-img" src="@/assets/main_ljh.jpg" /><br/>
-    <h3>Lucas James Houghton</h3>
-    <h3>6/19/2021 10:22 AM</h3>
-    <h3>3 lbs 6 oz</h3>
-    <h3>15 inches</h3>
     <router-view />
     <hr/>
     <div class="copyright">&copy; {{currentYear}} OxSoft Solutions</div>
