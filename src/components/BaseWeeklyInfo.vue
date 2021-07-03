@@ -56,7 +56,7 @@ export default {
             let weekUpdates = this.$store.getters.getUpdatesByWeek(this.week.id);
             if (weekUpdates && weekUpdates.length > 0) {
                 let dateStart = new Date(weekUpdates[0].date);
-                let dateEnd = new Date();
+                let dateEnd = new Date(dateStart);
                 dateEnd.setDate(dateStart.getDate() + 6);
                 let firstDate = `${dateStart.getMonth() + 1}/${dateStart.getDate()}`;
                 let lastDate = `${dateEnd.getMonth() + 1}/${dateEnd.getDate()}`;
