@@ -14,7 +14,7 @@
                                 <img src="@/assets/calendarDate.png" alt="Calendar Icon">
                             </figure>
                         </div>
-                        <div class="media-content">
+                        <div class="media-content no-overflow">
                             <p class="title is-4">Week {{weekNumber}}</p>
                             <p class="subtitle is-6">{{weekRange}}</p>
                         </div>
@@ -25,7 +25,7 @@
                                 <img src="@/assets/obesity.png" alt="Placeholder image">
                             </figure>
                         </div>
-                        <div class="media-content">
+                        <div class="media-content no-overflow">
                             <p class="title is-4">Weight</p>
                             <p class="subtitle is-6">{{weight}}</p>
                         </div>
@@ -36,7 +36,7 @@
                                 <img src="@/assets/ruler.png" alt="Placeholder image">
                             </figure>
                         </div>
-                        <div class="media-content">
+                        <div class="media-content no-overflow">
                             <p class="title is-4">Length</p>
                             <p class="subtitle is-6">{{length}}</p>
                         </div>
@@ -112,7 +112,10 @@ export default {
     margin: 5px;
     display: inline-flex;
 }
-.custom-card {
+.custom-card-border {
     border-radius: 25px;
+}
+.no-overflow {
+    overflow: hidden;
 }
 </style>
