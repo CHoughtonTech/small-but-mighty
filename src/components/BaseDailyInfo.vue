@@ -13,7 +13,7 @@
                             <img src="@/assets/calendarDate.png" alt="Placeholder image">
                         </figure>
                     </div>
-                    <div class="media-content">
+                    <div class="media-content no-overflow">
                         <p class="title is-4">Date</p>
                         <p class="subtitle is-6">{{updateDate}}</p>
                     </div>
@@ -24,7 +24,7 @@
                             <img src="@/assets/obesity.png" alt="Placeholder image">
                         </figure>
                     </div>
-                    <div class="media-content">
+                    <div class="media-content no-overflow">
                         <p class="title is-4">Weight</p>
                         <p class="subtitle is-6">{{weight}}</p>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="@/assets/calendar.png" alt="Placeholder image">
                         </figure>
                     </div>
-                    <div class="media-content">
+                    <div class="media-content no-overflow">
                         <p class="title is-4">Age</p>
                         <p class="subtitle is-6">{{daysOld}} Days Old</p>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="@/assets/note.png" alt="Notes">
                         </figure>
                     </div>
-                    <div class="media-content">
+                    <div class="media-content no-overflow">
                         <p class="title is-4">Updates</p>
                         <p class="subtitle is-6">{{details}}</p>
                     </div>
@@ -105,7 +105,10 @@ export default {
     margin: 5px;
     display: inline-flex;
 }
-.custom-card {
+.custom-card-border {
     border-radius: 25px;
+}
+.no-overflow {
+    overflow: hidden;
 }
 </style>
