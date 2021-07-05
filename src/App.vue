@@ -31,7 +31,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 5%;
+  background-color:lightgreen;
 }
 
 #nav {
@@ -44,8 +44,9 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #2c3e50;
 }
+
 hr {
   width: 100%;
   background-color: #2c3e50;
@@ -77,5 +78,6 @@ h6 {
 }
 .title-img {
   width:300px;
+  border-radius: 25px;
 }
 </style>

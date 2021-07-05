@@ -107,6 +107,7 @@ export default {
 }
 .custom-card-border {
     border-radius: 25px;
+    background-color:lightblue;
 }
 .no-overflow {
     overflow: hidden;
