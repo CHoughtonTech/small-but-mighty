@@ -3,7 +3,7 @@
     <h1>Week {{weekNumber}} Updates</h1>
     <br/>
     <BaseDailyInfo v-for="u in weekUpdates" :key="u.id" :update="u"/> <br/>
-    <button class="button is-primary is-light" @click="backToTop">Back to Top</button>
+    <button class="button is-info" @click="backToTop">Back to Top</button>
   </div>
 </template>
 
@@ -45,6 +45,6 @@ button {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 5%;
+  margin-top: 5%;
 }
 </style>
