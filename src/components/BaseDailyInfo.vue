@@ -52,6 +52,11 @@
                     </div>
                 </div>
             </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <button class="button is-primary" @click="showAdditionalDetails">Mom &amp; Dad Updates</button>
+                </p>
+            </footer>
         </div>
     </div>
 </template>
@@ -66,7 +71,8 @@ export default {
             weight: null,
             details: null,
             updateDate: null,
-            imageURL: null
+            imageURL: null,
+            additionalDetails: null
         }
     },
     created() {
@@ -75,6 +81,7 @@ export default {
         this.daysOld = this.daysDiff("6/19/2021", this.update.date);
         this.weight =  this.convertWeight(this.update.weight);
         this.imageURL = this.update.dailyPicture;
+        this.additionalDetails = this.update.additionalDetails;
     },
     methods: {
         convertWeight(grams) {
@@ -94,6 +101,9 @@ export default {
             let startDate = new Date(sd);
             let endDate = new Date(ed);
             return parseInt(endDate.getTime() - startDate.getTime())/(24*3600*1000) + 1;
+        },
+        showAdditionalDetails() {
+            this.$emit('show-additional-details', this.additionalDetails);
         }
     }
 }
