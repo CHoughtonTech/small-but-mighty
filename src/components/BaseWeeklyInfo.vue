@@ -22,7 +22,7 @@
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="@/assets/obesity.png" alt="Placeholder image">
+                                <img src="@/assets/obesity.png" alt="Weight Icon">
                             </figure>
                         </div>
                         <div class="media-content no-overflow">
@@ -33,7 +33,7 @@
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="@/assets/ruler.png" alt="Placeholder image">
+                                <img src="@/assets/ruler.png" alt="Length Icon">
                             </figure>
                         </div>
                         <div class="media-content no-overflow">
