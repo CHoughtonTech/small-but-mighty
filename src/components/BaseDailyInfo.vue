@@ -10,7 +10,7 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="@/assets/calendarDate.png" alt="Placeholder image">
+                            <img src="@/assets/calendarDate.png" alt="Date Icon">
                         </figure>
                     </div>
                     <div class="media-content no-overflow">
@@ -21,7 +21,7 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="@/assets/obesity.png" alt="Placeholder image">
+                            <img src="@/assets/obesity.png" alt="Weight Icon">
                         </figure>
                     </div>
                     <div class="media-content no-overflow">
@@ -32,7 +32,7 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="@/assets/calendar.png" alt="Placeholder image">
+                            <img src="@/assets/calendar.png" alt="Age Icon">
                         </figure>
                     </div>
                     <div class="media-content no-overflow">
@@ -43,7 +43,7 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-48x48">
-                            <img src="@/assets/note.png" alt="Notes">
+                            <img src="@/assets/note.png" alt="Updates Icon">
                         </figure>
                     </div>
                     <div class="media-content no-overflow">
