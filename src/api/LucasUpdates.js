@@ -28,7 +28,15 @@ const _dailyUpdates = [
     { "id": 20, "weekId": 2, "date": "7/9/2021", "details": "My little lump is gone from yesterday completely, so no worries at all! I'm also doing much better and staying awake when Mommy and Daddy visit!", "weight": 1620, "additionalDetails": "Luke is doing really well with his alertness, and is almost completely recovered from his abscess surgery. The doctor's say he is no longer in need of his pain meds, and the focus is completely on his growth and switching to bottle-feeding.", "dailyPicture": require("../assets/day21.jpg") },
     { "id": 21, "weekId": 3, "date": "7/10/2021", "details": "I got a toy today! I love it soooo much!!! I'm also almost off of my nose tube again!!!!", "weight": 1695, "additionalDetails": "Luke has been gaining a lot of weight, and is doing good. The focus now is him resting, growing, and learning how to bottlefeed. We are also happy that he is on 1/8th of a litre of air now!", "dailyPicture": require("../assets/day22.jpg") },
     { "id": 22, "weekId": 3, "date": "7/11/2021", "details": "Doctors say I just need to sleep and grow!! So today I rested on Mommy while Daddy read me some stories.", "weight": 1730, "additionalDetails": "Luke's recovery and health are doing great! He is so much more alert and active during our visits, it warms our hearts so much. We are hopeful he'll be home before his due date!", "dailyPicture": require("../assets/day23.jpg") },
-    { "id": 23, "weekId": 3, "date": "7/12/2021", "details": "Today I did a video call with my brother Trison while Daddy held me. I'm also doing really well gaining my weight, and am almost 4 pounds!", "weight": 1780, "additionalDetails": "Luke is still on his nasal cannula with a very low-flow. We spoke to his Nurse Practitioner, and they're going to do a trial \"Room Air Only\" tomorrow to see if they can just remove his nasal cannula for good!", "dailyPicture": require("../assets/day24.jpg") }
+    { "id": 23, "weekId": 3, "date": "7/12/2021", "details": "Today I did a video call with my brother Trison while Daddy held me. I'm also doing really well gaining my weight, and am almost 4 pounds!", "weight": 1780, "additionalDetails": "Luke is still on his nasal cannula with a very low-flow. We spoke to his Nurse Practitioner, and they're going to do a trial \"Room Air Only\" tomorrow to see if they can just remove his nasal cannula for good!", "dailyPicture": require("../assets/day24.jpg") },
+    { "id": 24, "weekId": 3, "date": "7/13/2021", "details": "I finished my medicine for my MRSA today, and the doctors say my blood tests showed no signs of infection!!! They also scanned my brain, and it looks normal too!", "weight": 1795, "additionalDetails": "Luke is officially full term (37 weeks gestation) today! He had some reflux that lead to him having a Bradycardia event that worried us because of the last one he had. But the nurses and doctors are sure it's just reflux. They are going to monitor him closely though to ensure no other Bradys(Bradycardia Events) occur. He is also off of his antibiotics, and is no longer showing signs of infection! And finally, the doctors did an ultrasound of his brain to make sure it looked as they expected now that he's full term -- and it looked great!", "dailyPicture": require("../assets/day25.jpg")}
+]
+const _family = [
+    { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4422, "photo": require("../assets/daddy.jpg") },
+    { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2300, "photo": require("../assets/mommy.jpg") },
+    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "photo": require("../assets/day3.jpg") },
+    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 4000, "photo": require("../assets/day4.jpg") },
+    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3000, "photo": require("../assets/day5.jpg") }
 ]
 
 export default {
@@ -37,5 +45,8 @@ export default {
     },
     getDailyUpdates(cb) {
         setTimeout(() => cb(_dailyUpdates), 100);
+    },
+    getFamily(cb) {
+        setTimeout(() => cb(_family), 100);
     }
 }
