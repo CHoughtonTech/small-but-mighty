@@ -47,7 +47,9 @@
     </router-link>
 </template>
 <script>
+import {conversionsMixin} from "../mixins/conversionsMixin";
 export default {
+    mixins:[conversionsMixin],
     props: {
         week: Object
     },
@@ -69,8 +71,8 @@ export default {
     created() {
         this.imageURL = this.week.weeklyPicture;
         this.weekNumber = this.week.weekNum;
-        this.length = this.convertLength(this.week.length);
-        this.weight = this.convertWeight(this.week.weight);
+        this.length = this.convertCMToIN(this.week.length);
+        this.weight = this.convertGramsToPounds(this.week.weight);
     },
     data() {
         return {
@@ -78,30 +80,6 @@ export default {
             weekNumber: 0,
             weight: null,
             length: null
-        }
-    },
-    methods: {
-        convertWeight(grams) {
-        const ouncePerGram = 0.035274;
-        let totalOunces = grams * ouncePerGram;
-        let pounds = Math.floor(totalOunces / 16);
-        let ounces = Math.floor((totalOunces - (pounds * 16)) * 2) / 2;
-        if (!isNaN(pounds) && !isNaN(ounces)) {
-            return `${pounds} lbs ${ounces} oz`;
-        } else if (!isNaN(pounds)) {
-            return `${pounds} lbs`
-        } else {
-            return null;
-        }
-        },
-        convertLength(cm) {
-            const inchPerCM = 0.393701;
-            let inches = Math.floor(cm * inchPerCM * 2) / 2;
-            if (!isNaN(inches)) {
-                return `${inches} inches`
-            } else {
-                return null;
-            }
         }
     }
 }

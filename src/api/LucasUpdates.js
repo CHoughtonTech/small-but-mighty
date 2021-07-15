@@ -32,11 +32,11 @@ const _dailyUpdates = [
     { "id": 24, "weekId": 3, "date": "7/13/2021", "details": "I finished my medicine for my MRSA today, and the doctors say my blood tests showed no signs of infection!!! They also scanned my brain, and it looks normal too!", "weight": 1795, "additionalDetails": "Luke is officially full term (37 weeks gestation) today! He had some reflux that lead to him having a Bradycardia event that worried us because of the last one he had. But the nurses and doctors are sure it's just reflux. They are going to monitor him closely though to ensure no other Bradys(Bradycardia Events) occur. He is also off of his antibiotics, and is no longer showing signs of infection! And finally, the doctors did an ultrasound of his brain to make sure it looked as they expected now that he's full term -- and it looked great!", "dailyPicture": require("../assets/day25.jpg")}
 ]
 const _family = [
-    { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4422, "photo": require("../assets/daddy.jpg") },
-    { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2300, "photo": require("../assets/mommy.jpg") },
-    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "photo": require("../assets/day3.jpg") },
-    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 4000, "photo": require("../assets/day4.jpg") },
-    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3000, "photo": require("../assets/day5.jpg") }
+    { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4365, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
+    { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2381, "birthLength": 48.3, "photo": require("../assets/mommy.jpg") },
+    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/day3.jpg") },
+    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/day4.jpg") },
+    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/day5.jpg") }
 ]
 
 export default {
