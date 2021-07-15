@@ -61,7 +61,9 @@
     </div>
 </template>
 <script>
+import { conversionsMixin } from '../mixins/conversionsMixin';
 export default {
+    mixins: [conversionsMixin],
     props: {
         update: Object
     },
@@ -79,24 +81,11 @@ export default {
         this.updateDate = this.update.date;
         this.details = this.update.details; 
         this.daysOld = this.daysDiff("6/19/2021", this.update.date);
-        this.weight =  this.convertWeight(this.update.weight);
+        this.weight =  this.convertGramsToPounds(this.update.weight);
         this.imageURL = this.update.dailyPicture;
         this.additionalDetails = this.update.additionalDetails;
     },
     methods: {
-        convertWeight(grams) {
-            const ouncePerGram = 0.035274;
-            let totalOunces = grams * ouncePerGram;
-            let pounds = Math.floor(totalOunces / 16);
-            let ounces = Math.floor((totalOunces - (pounds * 16)) * 2) / 2;
-            if (!isNaN(pounds) && !isNaN(ounces)) {
-                return `${pounds} lbs ${ounces} oz`;
-            } else if (!isNaN(pounds)) {
-                return `${pounds} lbs`
-            } else {
-                return null;
-            }
-        },
         daysDiff(sd, ed){
             let startDate = new Date(sd);
             let endDate = new Date(ed);
