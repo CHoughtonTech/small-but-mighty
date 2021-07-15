@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     weeks: [],
-    updates: []
+    updates: [],
+    family: []
   },
   mutations: {
     setWeeks(state, weeks) {
@@ -15,6 +16,9 @@ export default new Vuex.Store({
     },
     setUpdates(state, updates) {
       state.updates = updates;
+    },
+    setFamily(state, family) {
+      state.family = family;
     }
   },
   getters: {
@@ -43,6 +47,14 @@ export default new Vuex.Store({
       return new Promise((resolve) => {
         LucasUpdates.getDailyUpdates(updates => {
           commit('setUpdates', updates);
+          resolve();
+        });
+      });
+    },
+    getFamilyMembers({commit}){
+      return new Promise((resolve) => {
+        LucasUpdates.getFamily(family => {
+          commit('setFamily', family);
           resolve();
         });
       });
