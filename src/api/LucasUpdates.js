@@ -37,10 +37,24 @@ const _dailyUpdates = [
 const _family = [
     { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4365, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
     { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2381, "birthLength": 48.3, "photo": require("../assets/mommy.jpg") },
-    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/day3.jpg") },
-    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/day4.jpg") },
-    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/day5.jpg") }
+    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/TAPH_main.jpg") },
+    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/TKG_main.jpg") },
+    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/PJT_main.jpg") }
 ]
+
+const _lucas = { 
+    "id": 61921154039, 
+    "name": "Lucas James Houghton", 
+    "birthDate": "6/19/2021", 
+    "birthTime": "10:22 AM", 
+    "birthWeight": 1540, 
+    "birthLength": 39, 
+    "isDischarged": false,
+    "dischargeDate": "",
+    "dischargeWeight": 0,
+    "dischargeLength": 0,
+    "photo": require("../assets/main_ljh.jpg") 
+}
 
 export default {
     getWeeks(cb) {
@@ -51,5 +65,8 @@ export default {
     },
     getFamily(cb) {
         setTimeout(() => cb(_family), 100);
+    },
+    getLucas(cb) {
+        setTimeout(() => cb(_lucas), 100);
     }
 }
