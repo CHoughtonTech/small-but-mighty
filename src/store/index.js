@@ -8,7 +8,8 @@ export default new Vuex.Store({
   state: {
     weeks: [],
     updates: [],
-    family: []
+    family: [],
+    lucas: null
   },
   mutations: {
     setWeeks(state, weeks) {
@@ -19,6 +20,9 @@ export default new Vuex.Store({
     },
     setFamily(state, family) {
       state.family = family;
+    },
+    setLucas(state, lucas) {
+      state.lucas = lucas;
     }
   },
   getters: {
@@ -58,6 +62,14 @@ export default new Vuex.Store({
           resolve();
         });
       });
+    },
+    getLucasInfo({commit}){
+      return new Promise((resolve) => {
+        LucasUpdates.getLucas(luke => {
+          commit('setLucas', luke);
+          resolve();
+        })
+      })
     }
   }
 });
