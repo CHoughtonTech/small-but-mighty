@@ -5,7 +5,8 @@
     <h3>6/19/2021 10:22 AM</h3>
     <h3>3 lbs 6 oz</h3>
     <h3>15 inches</h3>
-    <BaseWeeklyInfo v-for="w in this.$store.state.weeks" :key="w.id" :week="w"/>
+    <BaseWeeklyInfo v-for="w in this.$store.state.weeks" :key="w.id" :week="w"/><br/>
+    <button class="button is-info" @click="backToTop">Back to Top</button>
   </div>
 </template>
 
@@ -15,6 +16,11 @@ import BaseWeeklyInfo from "@/components/BaseWeeklyInfo";
 export default {
   components: {
     BaseWeeklyInfo: BaseWeeklyInfo
+  },
+  methods: {
+    backToTop() {
+      window.scrollTo(0,0);
+    }
   }
 };
 </script>

@@ -2,7 +2,8 @@ const _weeks = [
     { "id": 0, "weekNum": 1, "weeklyPicture": require("../assets/day1.jpg"), "weight": 1540, "length": 39 },
     { "id": 1, "weekNum": 2, "weeklyPicture": require("../assets/day8.jpg"), "weight": 1350, "length": 39 },
     { "id": 2, "weekNum": 3, "weeklyPicture": require("../assets/day15.jpg"), "weight": 1580, "length": 39 },
-    { "id": 3, "weekNum": 4, "weeklyPicture": require("../assets/day22.jpg"), "weight": 1695, "length": 39 }
+    { "id": 3, "weekNum": 4, "weeklyPicture": require("../assets/day22.jpg"), "weight": 1695, "length": 39 },
+    { "id": 4, "weekNum": 5, "weeklyPicture": require("../assets/day29.jpg"), "weight": 1980, "length": 39 }
 ]
 const _dailyUpdates = [
     { "id": 0, "weekId": 0, "date": "6/19/2021", "details": "Born Today! It's cold out here!", "weight": 1540, "additionalDetails": "Luke was born after complications due to pre-eclampsia. Kelly's Liver was secreting proteins showing it was starting to fail, so the doctors induced labor for vaginal delivery. Luke then switch between breach and transverse positions, and so the doctors advised a c-section while Luke's levels were strong. And so we had our baby boy early at 33 weeks, 4 days gestation.", "dailyPicture": require("../assets/day1.jpg")},
@@ -32,15 +33,30 @@ const _dailyUpdates = [
     { "id": 24, "weekId": 3, "date": "7/13/2021", "details": "I finished my medicine for my MRSA today, and the doctors say my blood tests showed no signs of infection!!! They also scanned my brain, and it looks normal too!", "weight": 1795, "additionalDetails": "Luke is officially full term (37 weeks gestation) today! He had some reflux that lead to him having a Bradycardia event that worried us because of the last one he had. But the nurses and doctors are sure it's just reflux. They are going to monitor him closely though to ensure no other Bradys(Bradycardia Events) occur. He is also off of his antibiotics, and is no longer showing signs of infection! And finally, the doctors did an ultrasound of his brain to make sure it looked as they expected now that he's full term -- and it looked great!", "dailyPicture": require("../assets/day25.jpg")},
     { "id": 25, "weekId": 3, "date": "7/14/2021", "details": "Mommy and Daddy are super excited that I weigh 4 pounds as of today! I also am doing a room air trial! Hopefully no more nose hose!", "weight": 1845, "additionalDetails": "Today Luke hit 4 pounds, and we are so excited to see this little man growing so much!!! He's also doing a room air trial to make sure his O2 saturation doesn't drop below 92 (except when he's upset/crying). If he does good, he should be off of his nasal cannula for good!!!", "dailyPicture": require("../assets/day26.jpg") },
     { "id": 26, "weekId": 3, "date": "7/15/2021", "details": "Today my wound where my drain tube was no longer needs to be covered!!! I'm doing really good, and am still growing really well.", "weight": 1900, "additionalDetails": "Luke has done really good on his room air trial, and he is continuing to maintain his saturation off of his nasal cannula. As long as he makes it tonight without it, we can remove the special pads on his face for the cannula! We're so happy that he's doing so great. Such a strong boy!", "dailyPicture": require("../assets/day27.jpg") }, 
-    { "id": 27, "weekId": 3, "date": "7/16/2021", "details": "My nurses and doctors say I'm growing great! I just need to start using bottles to eat, then I can come home!!", "weight": 1970, "additionalDetails": "We spoke to the Nurse Practitioner today about what milestones Luke needs to hit, and the focus is on him learning how to eat with his mouth. We're so close to having this little man home!!", "dailyPicture": require("../assets/day28.jpg") }
+    { "id": 27, "weekId": 3, "date": "7/16/2021", "details": "My nurses and doctors say I'm growing great! I just need to start using bottles to eat, then I can come home!!", "weight": 1970, "additionalDetails": "We spoke to the Nurse Practitioner today about what milestones Luke needs to hit, and the focus is on him learning how to eat with his mouth. We're so close to having this little man home!!", "dailyPicture": require("../assets/day28.jpg") },
+    { "id": 28, "weekId": 4, "date": "7/17/2021", "details": "Today my Bumba gave me a cool little hat! It fits perfectly on my teenie head!!", "weight": 1980, "additionalDetails": "Luke outgrew his first blood pressure cuff today!! We get to keep it for memoribilia when this whole thing is put behind us. We're so excited that our little man is growing so well. Also, he looked beyond adorable in the little hat that Bumba made him!", "dailyPicture": require("../assets/day29.jpg") }
 ]
 const _family = [
     { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4365, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
     { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2381, "birthLength": 48.3, "photo": require("../assets/mommy.jpg") },
-    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/day3.jpg") },
-    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/day4.jpg") },
-    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/day5.jpg") }
+    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/TAPH_main.jpg") },
+    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/TKG_main.jpg") },
+    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/PJT_main.jpg") }
 ]
+
+const _lucas = { 
+    "id": 61921154039, 
+    "name": "Lucas James Houghton", 
+    "birthDate": "6/19/2021", 
+    "birthTime": "10:22 AM", 
+    "birthWeight": 1540, 
+    "birthLength": 39, 
+    "isDischarged": false,
+    "dischargeDate": "",
+    "dischargeWeight": 0,
+    "dischargeLength": 0,
+    "photo": require("../assets/main_ljh.jpg") 
+}
 
 export default {
     getWeeks(cb) {
@@ -51,5 +67,8 @@ export default {
     },
     getFamily(cb) {
         setTimeout(() => cb(_family), 100);
+    },
+    getLucas(cb) {
+        setTimeout(() => cb(_lucas), 100);
     }
 }
