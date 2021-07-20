@@ -39,11 +39,11 @@ const _dailyUpdates = [
     { "id": 30, "weekId": 4, "date": "7/19/2021", "details": "I'm one month old today!! And I also drank milk for the first time today!! I did so good, but boy did I get tired!", "weight": 2025, "additionalDetails": "Today our beautiful baby boy turned one month old! It blows our mind he's been in the NICU for a whole month now. He decided to surprise us with drinking 11 ML of milk from his bottle for his noon feeding!! We are so excited that he was able to do this, and starting tomorrow, we get to try and bottle feed our little man! Additionally, the cultures on his blood and urine came back negative!! Such a great day today.", "dailyPicture": require("../assets/day31.jpg") }
 ]
 const _family = [
-    { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4365, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
-    { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2381, "birthLength": 48.3, "photo": require("../assets/mommy.jpg") },
-    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4422, "birthLength": 54.6, "photo": require("../assets/TAPH_main.jpg") },
-    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3713, "birthLength": 50.8, "photo": require("../assets/TKG_main.jpg") },
-    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3713, "birthLength": 53.3, "photo": require("../assets/PJT_main.jpg") }
+    { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4366, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
+    { "id": 1, "name": "Kelly Houghton", "relation": "Mommy", "birthDate": "7/4/1984", "birthWeight": 2382, "birthLength": 48.3, "photo": require("../assets/mommy.jpg") },
+    { "id": 2, "name": "Trey Parks", "relation": "Brother", "birthDate": "4/12/2010", "birthWeight": 4423, "birthLength": 54.7, "photo": require("../assets/TAPH_main.jpg") },
+    { "id": 3, "name": "Trison Gardner", "relation": "Brother", "birthDate": "8/16/2010", "birthWeight": 3714, "birthLength": 50.8, "photo": require("../assets/TKG_main.jpg") },
+    { "id": 4, "name": "Peiper Tomlinson", "relation": "Sister", "birthDate": "11/9/2014", "birthWeight": 3714, "birthLength": 53.5, "photo": require("../assets/PJT_main.jpg") }
 ]
 
 const _lucas = { 

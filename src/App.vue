@@ -2,7 +2,8 @@
   <div id="app">
     <br/>
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <router-link to="/">Home</router-link> | 
+      <router-link to="/about">About</router-link>
     </div>
     <router-view />
     <hr/>
@@ -16,6 +17,8 @@ export default {
   created() {
     this.$store.dispatch("getWeeks");
     this.$store.dispatch("getDailyUpdates");
+    this.$store.dispatch("getFamilyMembers");
+    this.$store.dispatch("getLucasInfo");
   },
   computed: {
     currentYear() {
