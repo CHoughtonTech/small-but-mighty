@@ -54,7 +54,8 @@ const _dailyUpdates = [
     { "id": 43, "weekId": 6, "date": "8/1/2021", "details": "I hadn't pooted since yesterday, and the nurses started to worry. But after Daddy fed me, and gave me snuggles, I was finally able to poot!! I feel sooooo much better now!", "weight": 2500, "additionalDetails": "Luke has gone over 48 hours without a single bradycardia incident, and so now the nurses and doctors are feeling much more optimistic about a discharge date coming soon! We're going to do a trial soon with No NG tube to see if he can sustain and grow by just bottle feeding. Wish us luck!!!", "dailyPicture": require("../assets/day44.jpg") },
     { "id": 44, "weekId": 6, "date": "8/2/2021", "details": "Today was Daddy's first day back at work, I missed him lots. But Mommy was there to give me all the snuggles and kisses for him. Also, if I keep doing good for the next 3 days, I GET TO COME HOME!!!! WOOT!!", "weight": 2500, "additionalDetails": "Now that Luke's brady's are no longer an issue, we can plan on him coming home very soon! The nurses are prepping us for discharge on Thursday, August 5th! We hope everything goes great so we can get this little man home!!!", "dailyPicture": require("../assets/day45.jpg") },
     { "id": 45, "weekId": 6, "date": "8/3/2021", "details": "This was the day I was supposed to be born! Happy Due Date to me!!!! I just didn't want to wait that long to meet Mommy and Daddy!!!", "weight": 2535, "additionalDetails": "Today was Luke's original due date, so he is officially a newborn! No longer considered a preemie, we don't go by weeks gestation, but by his 'adjusted' age for milestones. Tomorrow Mommy and Daddy get to do a 'Rooming In', which means we spend all day with our Lucas to show we can take care of him when he gets discharged!!!!", "dailyPicture": require("../assets/day46.jpg") },
-    { "id": 46, "weekId": 6, "date": "8/4/2021", "details": "Mommy and Daddy spent all day with me today! I was so happy, and decided to help them feed me! I also passed my car seat trial, so I'm ready to come home tomorrow!", "weight": 2540, "additionalDetails": "Today was our Rooming Day, where we spent all day with Luke to show that we could care for him when we brought him home. We had a lot of teachings to do today, and it was quite exhausting. But it's totally worth it because tomorrow we get to bring our little man home!!", "dailyPicture": require("../assets/day47.jpg") }
+    { "id": 46, "weekId": 6, "date": "8/4/2021", "details": "Mommy and Daddy spent all day with me today! I was so happy, and decided to help them feed me! I also passed my car seat trial, so I'm ready to come home tomorrow!", "weight": 2540, "additionalDetails": "Today was our Rooming Day, where we spent all day with Luke to show that we could care for him when we brought him home. We had a lot of teachings to do today, and it was quite exhausting. But it's totally worth it because tomorrow we get to bring our little man home!!", "dailyPicture": require("../assets/day47.jpg") },
+    { "id": 47, "weekId": 6, "date": "8/5/2021", "details": "I got discharged today!! Thank you so much to all my doctors and nurses, I love you so much!!", "weight": 2550, "additionalDetails": "Today our baby boy came home!!! It was such a crazy and wonderful adventure, and we're beyond grateful for Luke's Doctors and Nurses who worked tirelessly to help our baby boy grow so big and strong. He wouldn't be here today without their dedication and overall care for our boy. Thank you so much.... We love you so much, and we'll never forget you.", "dailyPicture": require("../assets/day48.jpg") }
 ]
 const _family = [
     { "id": 0, "name": "Curt Houghton", "relation": "Daddy", "birthDate": "10/28/1988", "birthWeight": 4366, "birthLength": 48.3, "photo": require("../assets/daddy.jpg") },
@@ -72,10 +73,12 @@ const _lucas = {
     "birthWeight": 1540, 
     "birthLength": 39, 
     "isDischarged": false,
-    "dischargeDate": "",
-    "dischargeWeight": 0,
-    "dischargeLength": 0,
-    "photo": require("../assets/main_ljh.jpg") 
+    "dischargeDate": "8/5/2021",
+    "dischargeTime": "12:52 PM",
+    "dischargeWeight": 2550,
+    "dischargeLength": 43,
+    "photo": require("../assets/main_ljh.jpg"),
+    "dischargePhoto": require("../assets/day48.jpg") 
 }
 
 export default {
